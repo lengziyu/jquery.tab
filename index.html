@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>我的Tab插件 </title>
+  <style>
+    .menu li.current{
+      color: red;
+    }
+    .main li{
+      display: none;
+    }
+    .main li.current{
+      display: block;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="tab">
+    <ul class="menu">
+      <li class="current"><a href="">按钮1</a></li>
+      <li><a href="">按钮2</a></li>
+      <li><a href="">按钮3</a></li>
+    </ul>
+    <ul class="main">
+      <li class="current">内容1</li>
+      <li>内容2</li>
+      <li>内容3</li>
+    </ul>
+  </div>
+
+  <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+  <script src="jquery.tab.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".tab").tab();
+    });
+  </script>
+</body>
+</html>
