@@ -2,16 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>我的Tab插件 </title>
+  <title>我的Tab插件</title>
   <style>
-    .menu li.current{
-      color: red;
+    *{
+      padding: 0;
+      margin: 0;
     }
+    .tab{
+      width: 400px;
+    }
+    ul li{
+      list-style: none;
+    }
+    .menu{
+      width: 100%;
+      height: 44px;
+      font-size: 16px;
+      border-bottom: 1px solid #3E3856;
+    }
+    .menu li{
+      display: inline-block;
+      float: left;
+      width: 89px;
+      height: 43px;
+      line-height: 43px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .menu li.active{
+      color: #E3C48B;
+      border-bottom: 2px solid #E3C48B;
+    }
+
+
     .main li{
       display: none;
+      width: 100%;
+      height: 300px;
+      text-align: center;
+      line-height: 300px;
+      font-size: 40px;
     }
-    .main li.current{
+    .main li.active{
       display: block;
+      background-color: #ddd;
     }
   </style>
 </head>
@@ -20,12 +54,12 @@
 <body>
   <div class="tab">
     <ul class="menu">
-      <li class="current"><a href="">按钮1</a></li>
-      <li><a href="">按钮2</a></li>
-      <li><a href="">按钮3</a></li>
+      <li class="active">按钮1</li>
+      <li>按钮2</li>
+      <li>按钮3</li>
     </ul>
     <ul class="main">
-      <li class="current">内容1</li>
+      <li class="active">内容1</li>
       <li>内容2</li>
       <li>内容3</li>
     </ul>
