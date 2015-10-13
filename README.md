@@ -1,5 +1,5 @@
 # jquery tab
-######jquery手风琴插件
+######jquery tab插件
 ######这个我写的第一个jquery插件，命名为jquery.tab。
 ===========================
 
